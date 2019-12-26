@@ -10,4 +10,5 @@ class profile::agent_nodes {
     ensure => present,
     ip => '172.18.0.2',
   }
+  dockeragent::node { 'minetest.puppet.vm' }
 }
